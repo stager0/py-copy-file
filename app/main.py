@@ -16,5 +16,5 @@ def copy_file(command: str) -> None:
     with open(from_file_name, "r") as file_in:
         contains = file_in.read()
 
-    with open(if_file_name, "a") as file_out:
+    with open(if_file_name, "w") as file_out:
         file_out.write(contains)
